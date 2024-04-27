@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBasket</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="GreenBasket" class="logo">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="cat.html">Categories</a></li>
+            <li><a href="#Deals">Deals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+ 
+        <header>
+            <div class="hero">
+                <h1>GreenBasket at Your Doorstep</h1>
+                <p>Order fresh groceries online and get them delivered in no time!</p>
+                <a href="cat.html" class="cta-button">Shop Now</a>
+            </div>
+        </header>
+
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="img/product1.jpg" alt="Product 1">
+                <h3>Garnier Men, Face Wash, Brightening & Anti-Pollution, TurboBright Double Action, 150 g</h3>
+                <p>Price: ₹259</p>
+                <button class="buy-button"
+                    onclick="addToCart('Garnier Men, Face Wash, Brightening & Anti-Pollution, TurboBright Double Action, 150 g', 259, 'img/product1.jpg')">Add
+                    to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/product2.jpg" alt="Product 2">
+                <h3>Cadbury Bournvita Chocolate Health Drink, 500 g Jar</h3>
+                <p>Price: ₹228</p>
+                <button class="buy-button"
+                    onclick="addToCart('Cadbury Bournvita Chocolate Health Drink, 500 g Jar', 228, 'img/product2.jpg')">Add
+                    to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product3.jpg" alt="Product 3">
+                <h3>Classmate Notebook (240 x 180) 172 Pages Unruled Soft Cover</h3>
+                <p>Price: ₹43</p>
+                <button class="buy-button"
+                    onclick="addToCart('Classmate Notebook (240 x 180) 172 Pages Unruled Soft Cover', 43, 'img/product3.jpg')">Add
+                    to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product4.jpg" alt="Product 3">
+                <h3>Pampers Baby Wipes For Baby - With Aloe, 72 pcs (Pack of 2)</h3>
+                <p>Price: ₹418</p>
+                <button class="buy-button"
+                    onclick="addToCart('Pampers Baby Wipes For Baby - With Aloe, 72 pcs (Pack of 2)', 418, 'img/product4.jpg')">Add
+                    to Cart</button>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="step">
+                <img src="img/browse.jpg" alt="Step 1">
+                <h3>Step 1</h3>
+                <p>Browse our wide selection of groceries.</p>
+            </div>
+            <div class="step">
+                <img src="img/cart.jpg" alt="Step 2">
+                <h3>Step 2</h3>
+                <p>Add items to your cart and proceed to checkout.</p>
+            </div>
+            <div class="step">
+                <img src="img/doorstep.jpg" alt="Step 3">
+                <h3>Step 3</h3>
+                <p>We'll deliver your order to your doorstep.</p>
+            </div>
+        
+        </section>
+
+<footer>
+    <div class="footer-logo">
+        <img src="img/logo.png" alt="GreenBasket" class="logo">
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="pp.html">Privacy Policy</a></li>
+            <li><a href="tos.html">Terms of Service</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+<div class="additional-content">
+    <h4>About Us</h4>
+    <p>Welcome to GreenBasket, your premier online grocery destination! At GreenBasket, we redefine convenience by delivering a diverse selection of fresh, high-quality groceries right to your doorstep. Explore our extensive range of products, from household essentials to gourmet delights, all carefully curated to meet your needs. We prioritize freshness, ensuring that each item is handpicked to guarantee satisfaction. Our user-friendly platform and efficient delivery services make grocery shopping a seamless experience. Join us in embracing a hassle-free lifestyle where top-notch groceries are just a click away. GreenBasket – where quality meets convenience, transforming your grocery shopping into a delightful, stress-free affair.</p>
+</div>
+<div class="additional-content">
+    <h4>Follow Us</h4>
+    <ul class="social-media">
+        <li><a href="https://www.facebook.com/anuragsaini494/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/anurag-saini-a9116b237/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/_anuragsaini_494/" target="_blank">Instagram</a></li>
+    </ul>
+</div>
+<div class="additional-content">
+    <h4>Newsletter</h4>
+    <p>Subscribe to our newsletter for updates and special offers.</p>
+    <form action="#" method="post" class="newsletter-form">
+        <input type="email" name="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

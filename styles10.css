@@ -1,0 +1,187 @@
+/* Reset some default styles for better consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a global font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+}
+
+/* Product varieties section styles */
+.product-varieties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Product card styles */
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f9f9f9;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+    background-color: #b8bdb9;
+    border-radius: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+/* Remove hover effect for footer links */
+.footer-links a:hover {
+    background-color: #b8bdb9;
+    text-decoration: none;
+}
+
+/* Additional content styles */
+.additional-content {
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+}
+
+.additional-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+}
+
+.social-media a:hover {
+    text-decoration: none;
+}
+
+.newsletter-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+.logo {
+    width: 70px;
+    margin-top: 0;
+    /* Adjusted margin for the logo */
+    margin-left: 0;
+    /* Adjusted margin for the logo */
+}
+
+/* Button styles */
+.add-to-cart-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}

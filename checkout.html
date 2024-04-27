@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - GreenBasket</title>
+    <link rel="stylesheet" href="styles14.css"> <!-- Link to your stylesheet -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="GreenBasket" class="logo">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="cat.html">Categories</a></li>
+            <li><a href="#Deals">Deals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout-container">
+        <h1>Checkout</h1>
+        <p>Review your order and proceed to payment:</p>
+
+        <!-- Display Cart Items and Total Price -->
+        <div class="cart-container">
+            <!-- JavaScript will dynamically add and manage cart items here -->
+        </div>
+
+        <div class="total-price">
+            <h2>Total Price: ₹<span id="totalPrice">0</span></h2>
+        </div>
+
+        <!-- Payment Form (Example: Placeholder form, not functional) -->
+        <form id="paymentForm" action="process_payment.php" method="post">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </section>
+
+    <!-- Footer styles -->
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="GreenBasket" class="logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="pp.html">Privacy Policy</a></li>
+                <li><a href="tos.html">Terms of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Additional content in the footer -->
+        <div class="additional-content">
+            <h4>About Us</h4>
+            <p>Welcome to GreenBasket, your premier online grocery destination! At GreenBasket, we redefine convenience
+                by delivering a diverse selection of fresh, high-quality groceries right to your doorstep. Explore our
+                extensive range of products, from household essentials to gourmet delights, all carefully curated to
+                meet your needs. We prioritize freshness, ensuring that each item is handpicked to guarantee
+                satisfaction. Our user-friendly platform and efficient delivery services make grocery shopping a
+                seamless experience. Join us in embracing a hassle-free lifestyle where top-notch groceries are just a
+                click away. GreenBasket – where quality meets convenience, transforming your grocery shopping into a
+                delightful, stress-free affair.</p>
+        </div>
+        <div class="additional-content">
+            <h4>Follow Us</h4>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/anuragsaini494/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/anurag-saini-a9116b237/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/_anuragsaini_494/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="additional-content">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for updates and special offers.</p>
+            <form action="#" method="post" class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Call the function to set up the cart items on the checkout.html page
+        setupCartItems();
+
+        // Function to calculate and display the total price
+        function calculateTotalPrice() {
+            // Retrieve all cart items from sessionStorage
+            const cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+            // Calculate the total price
+            const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+
+            // Display the total price on the checkout page
+            const totalPriceElement = document.getElementById('totalPrice');
+            if (totalPriceElement) {
+                totalPriceElement.textContent = totalPrice;
+            }
+        }
+
+        // Use this function to set up the cart items on the checkout.html page
+        function setupCartItems() {
+            // Retrieve all cart items from sessionStorage
+            const cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+            // Create a cart item for each saved item and append it to the cart container
+            const cartContainer = document.querySelector('.cart-container');
+            cartItems.forEach((item) => {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+
+                cartItem.innerHTML = `
+                    <img src="${item.imageSrc}" alt="${item.name}">
+                    <h2>${item.name}</h2>
+                    <p>Price: ₹${item.price}</p>
+                `;
+
+                cartContainer.appendChild(cartItem);
+            });
+
+            // Call the function to calculate and display the total price
+            calculateTotalPrice();
+        }
+    </script>
+</body>
+
+</html>

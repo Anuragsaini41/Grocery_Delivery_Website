@@ -1,0 +1,43 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a global font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styles (if applicable) */
+/* ... */
+
+/* Content styles */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Privacy Policy section styles */
+.privacy-policy h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.privacy-policy p {
+    margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.privacy-policy li {
+    margin-bottom: 10px;
+}

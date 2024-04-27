@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenBasket</title>
+    <!-- Include your CSS stylesheets and other necessary resources here -->
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body style="background-image: url('img/background.jpg'); background-size: cover; background-position: center;">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Your Grocery Delivery" class="logo">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="cat.html">Categories</a></li>
+            <li><a href="#Deals">Deals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <!-- Include your website header/navigation here -->
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>If you have any questions, suggestions, or need assistance, please don't hesitate to get in touch
+                    with us. We're here to help!</p>
+
+                <!-- Contact Form -->
+                <form action="process_contact.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer styles -->
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="GreenBasket" class="logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="pp.html">Privacy Policy</a></li>
+                <li><a href="tos.html">Terms of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Additional content in the footer -->
+        <div class="additional-content">
+            <h4>About Us</h4>
+            <p>Welcome to GreenBasket, your premier online grocery destination! At GreenBasket, we redefine convenience
+                by delivering a diverse selection of fresh, high-quality groceries right to your doorstep. Explore our
+                extensive range of products, from household essentials to gourmet delights, all carefully curated to
+                meet your needs. We prioritize freshness, ensuring that each item is handpicked to guarantee
+                satisfaction. Our user-friendly platform and efficient delivery services make grocery shopping a
+                seamless experience. Join us in embracing a hassle-free lifestyle where top-notch groceries are just a
+                click away. GreenBasket – where quality meets convenience, transforming your grocery shopping into a
+                delightful, stress-free affair.</p>
+        </div>
+        <div class="additional-content">
+            <h4>Follow Us</h4>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/anuragsaini494/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/anurag-saini-a9116b237/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/_anuragsaini_494/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="additional-content">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for updates and special offers.</p>
+            <form action="#" method="post" class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

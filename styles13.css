@@ -1,0 +1,45 @@
+/* Add this to your existing CSS or create a new file */
+
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a global font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styles (if applicable) */
+/* ... */
+
+/* Content styles */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Terms of Service section styles */
+.terms-of-service h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.terms-of-service h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.terms-of-service p {
+    margin-bottom: 15px;
+}
+
+/* Footer styles (if applicable) */
+/* ... */
